@@ -1,0 +1,211 @@
+.todo {
+  margin-top: 15px;
+}
+
+.add-todo-label {
+  color: black;
+  margin-right: 15px;
+}
+
+.todo-card {
+  border-radius: 10px;
+  border: none;
+  display: grid;
+  grid-template-columns: 16px 402px 68px 74px;
+  grid-template-rows: 28px 28px minmax(64px, auto) 24px;
+  padding: 16px;
+  padding-right: 40px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  gap: 8px;
+  width: 584px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todo-checkbox {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin: 0;
+}
+
+.todo-checkbox:hover {
+  cursor: pointer;
+}
+
+h2 {
+  color: white;
+}
+
+.input-title {
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 28;
+  border: #ffffff;
+  grid-column: 2/-3;
+}
+
+.add-todo-input-date,
+.date {
+  grid-column: -3/-1;
+}
+
+.todo-title {
+  margin-right: auto;
+  grid-column: 2/-2;
+}
+
+.input-description {
+  padding: 5px;
+  box-sizing: border-box;
+  line-height: 20px;
+  border: #ffffff;
+  grid-column: 2/-1;
+  grid-row: 2/3;
+}
+
+.todo-text {
+  margin-right: auto;
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  line-height: 20px;
+}
+
+.add-todo-files,
+.todo-files {
+  grid-column: 2/-1;
+  grid-row: 3/4;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+}
+
+.add-todo-input-files,
+.input-files {
+  grid-row: -2/-1;
+  grid-column: 2/3;
+}
+
+.add-todo-button,
+.disabled-add-button {
+  background-color: white;
+  color: #316bc8;
+  border: none;
+  padding: 1px;
+  border-radius: 5px;
+  grid-row: -2/-1;
+  grid-column: -3/-2;
+}
+
+.add-todo-button:hover {
+  color: #76adff;
+  cursor: pointer;
+}
+
+.disabled-add-button {
+  color: #76adff;
+}
+
+.delete-todo {
+  display: none;
+  background-color: white;
+  color: crimson;
+  border: none;
+  padding: 1px;
+  grid-row: -2/-1;
+  grid-column: -2/-1;
+}
+
+.delete-todo:hover {
+  color: #3c1c29;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* {
+  color: #9aacc1;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: auto;
+  grid-row: -2/-1;
+  grid-column: 2/3;
+} */
+
+.added-card:hover .delete-todo {
+  display: block;
+}
+
+.cancel-todo {
+  background-color: white;
+  color: crimson;
+  border: none;
+  padding: 1px;
+  grid-row: -2/-1;
+  grid-column: -2/-1;
+}
+
+.cancel-todo:hover {
+  color: #3c1c29;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.save-todo {
+  background-color: white;
+  color: #316bc8;
+  border: none;
+  padding: 1px;
+  grid-row: -2/-1;
+  grid-column: -3/-2;
+}
+
+.save-todo:hover {
+  color: #76adff;
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-task {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.delete-file {
+  padding: 0;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  display: none;
+  position: absolute;
+  border: 0;
+  background: transparent;
+  right: 0;
+  top: 0;
+}
+
+.file-cell {
+  position: relative;
+}
+
+.file-cell:hover .delete-file {
+  display: block;
+}
+
+.delete-file:hover {
+  cursor: pointer;
+}
+
+.done-title {
+  text-align: start;
+  text-decoration: line-through;
+}
